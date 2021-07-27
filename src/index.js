@@ -1,8 +1,8 @@
 import "./styles.scss";
-import meaningHBS from "./template.hbs";
-import menuSet from './menu.json';
-const menuItems = document.querySelector('.js-menu');
-menuItems.insertAdjacentHTML('beforeend', meaningHBS(menuSet));
+import contentTemplate from "./template.hbs";
+import menuRange from './menu.json';
+const menuPosition = document.querySelector('.js-menu');
+menuPosition.insertAdjacentHTML('beforeend', contentTemplate(menuRange));
 const Theme = {
     LIGHT: 'light-theme',
     DARK: 'dark-theme',
